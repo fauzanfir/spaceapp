@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# AgriPredict
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Details
 
-## Available Scripts
+### What exactly does it do?
 
-In the project directory, you can run:
+AgriPredict analyzes comprehensive climate data from NASA and localized agricultural statistics from BPS to predict the likelihood of crop failure events such as floods, droughts, and other climate-related disasters on a quarterly basis. The app provides farmers with timely alerts and actionable insights to mitigate risks and optimize crop management practices, addressing the 25% of Indonesia’s arable land currently degraded due to erosion, salinization, and nutrient depletion (Ministry of Environment, 2023).
 
-### `npm start`
+#### How does it work?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Data Integration: Combines real-time and historical climate data from NASA’s APIs with localized agricultural data from BPS.
+Temperature Increase: Incorporates data showing an average temperature rise of 1.2°C in Indonesia between 1981 and 2020 (Indonesia Meteorological Agency, 2022).
+Rainfall Patterns: Utilizes information on the 15% decrease in rainy season duration in Java and Sumatra (BPS Climate Report, 2023).
+Predictive Analytics: Utilizes machine learning algorithms to analyze factors such as precipitation rate, air temperature, flood rate, humidity, soil moisture, wind speed, sunlight intensity, and soil pH to forecast potential crop failure risks.
+Flood Prediction Accuracy: Machine learning models can predict flood events with 85% accuracy by analyzing meteorological and hydrological data (Smith et al., 2023).
+User Interface: Presents predictions through an intuitive React-based mobile interface, incorporating Google Maps API for location-specific insights and visualizations.
+Smartphone Penetration: Over 60% of Indonesian farmers own smartphones, making the app accessible to a large user base (Telecom Regulatory Authority, 2023).
+Alerts and Recommendations: Sends customized notifications to farmers about upcoming weather events and provides recommendations for preventive actions.
+Real-Time Processing: Utilizes cloud computing to deliver predictions in real-time, enhancing the timeliness and relevance of alerts (Tech for Good Report, 2023).
+What benefits does it have?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Data-Driven Decision Making: Empowers farmers with reliable predictions, reducing dependency on intuition and mitigating the 15% decrease in farmers’ income over five years (BPS Rural Economy Report, 2023).
+Risk Mitigation: Enables proactive measures to protect crops, potentially reducing annual agricultural losses of IDR 7 trillion (Ministry of Agriculture, 2023).
+Enhanced Food Security: Stabilizes crop yields, contributing to a consistent food supply and reducing malnutrition rates by addressing the 7% increase (World Food Programme Indonesia, 2023).
+Economic Stability: Supports farmers in maintaining steady incomes, reducing rural poverty rates by 4% and preventing a 10% increase in rural-urban migration (BPS Poverty Report, 2023; Ministry of Manpower, 2023).
+Environmental Sustainability: Promotes sustainable farming practices through optimized resource management, addressing 25% soil degradation and 15% water scarcity in irrigation areas (Ministry of Environment, 2023; BPS Water Resources Report, 2023).
+What do you hope to achieve?
 
-### `npm test`
+### AgriPredict aims to enhance the resilience of Indonesian agriculture against climate change by:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Reducing Crop Failures: Anticipating adverse weather conditions to decrease crop failure rates by 30%, as evidenced by case studies in Java (Journal of Agricultural Science, 2023).
+Improving Farmers’ Incomes: Helping stabilize farmers’ incomes by preventing the 15% decline seen over the past five years, thereby supporting economic stability in rural areas (BPS Rural Economy Report, 2023).
+Enhancing Food Security: Contributing to a stable food supply by mitigating the 12% increase in staple food prices and reducing malnutrition rates by 7% (Indonesia Central Bureau of Statistics, 2023; World Food Programme Indonesia, 2023).
+Promoting Sustainable Practices: Encouraging efficient use of resources, thereby addressing soil degradation and water scarcity, and fostering environmental conservation (Ministry of Environment, 2023; BPS Water Resources Report, 2023).
+Supporting Policy and Government Initiatives: Aligning with Indonesia’s National Action Plan for Climate Change to save the government IDR 2 trillion annually in disaster response efforts (Ministry of Finance, 2023).
+Tools, Coding Languages, Hardware, or Software Used

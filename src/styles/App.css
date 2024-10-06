@@ -1,0 +1,29 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #282c34;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.globe-container {
+  flex-grow: 1;
+}

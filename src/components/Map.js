@@ -2,39 +2,45 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 
 // Replace with your API key
-const apiKey = "ENG ING ENG";
+const apiKey = "AIzaSyBtQneLuT5Ky6eV2cDgJuLABX7HlNKFtok";
 
 // Default center and zoom level
 const defaultProps = {
     center: {
-        lat: 37.7749, // Latitude of San Francisco
-        lng: -122.4194 // Longitude of San Francisco
+        lat: -7.7956, // Latitude for Java, Indonesia
+        lng: 110.3695, // Longitude for Java, Indonesia
     },
-    zoom: 10 // Increased zoom level to see the heatmap better
+    zoom: 10,
 };
 
 // Generate random heatmap data
 const generateHeatmapData = () => {
     const positions = [];
-    for (let i = 0; i < 500; i++) { // Increased number of data points
-        const lat = 37.7749 + (Math.random() - 0.5) * 0.2; // Random latitude around San Francisco
-        const lng = -122.4194 + (Math.random() - 0.5) * 0.2; // Random longitude around San Francisco
-        positions.push({ lat, lng });
+
+    // Generate random positions with random weights
+    for (let i = 0; i < 5000; i++) {
+        const lat = -7.7956 + (Math.random() - 0.5) * 100; // Random latitude around Java
+        const lng = 110.3695 + (Math.random() - 0.5) * 100; // Random longitude around Java
+        const weight = parseFloat((Math.random()).toFixed(4)); // Random weight between 0 and 1 with 4 decimal places
+        positions.push({ lat, lng, weight });
     }
-    
-    const options = {   
-        radius: 20,   // Adjust radius for visibility
-        opacity: 0.4, // Adjust opacity for visibility
+
+    // Log generated positions for debugging
+    console.log("Generated Positions:", positions);
+
+    const options = {
+        radius: 5, // Adjust radius for visibility
+        opacity: 0.6, // Adjust opacity for visibility
     };
-    
-    return { positions, options }; // Return the heatmap data in the correct format
+
+    return { positions, options }; 
 };
 
 const Map = () => {
     const heatmapData = generateHeatmapData(); // Generate heatmap data
 
     return (
-        <div style={{ height: '100vh', width: '100%' }}>
+        <div style={{ height: '100vh', width: '90%' }}>
             <GoogleMapReact
                 bootstrapURLKeys={{
                     key: apiKey,
@@ -45,7 +51,7 @@ const Map = () => {
                 heatmapLibrary={true} 
                 heatmap={heatmapData}
             >
-                {/* Add markers or other elements here if needed */}
+                {/* You can add markers or other elements here if needed */}
             </GoogleMapReact>
         </div>
     );

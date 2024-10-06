@@ -39,3 +39,36 @@ body {
 .button-group button {
   margin-left: 10px;
 }
+
+/* src/index.css or a dedicated CSS file for the popup */
+
+.welcome-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it's on top */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+  text-align: center;
+  overflow-y: auto; /* Scrollable content */
+  max-height: 80%; /* Limit height for scroll */
+}
+
+.popup-content h2 {
+  margin: 0 0 10px;
+}
+
+.popup-content p {
+  margin: 0 0 20px;
+}
